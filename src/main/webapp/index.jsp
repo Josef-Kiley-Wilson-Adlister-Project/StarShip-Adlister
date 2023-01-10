@@ -5,6 +5,13 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Starship Adlister" />
     </jsp:include>
+    <style>
+        body{
+            background-color: #000000;
+            color: yellow;
+
+        }
+    </style>
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
