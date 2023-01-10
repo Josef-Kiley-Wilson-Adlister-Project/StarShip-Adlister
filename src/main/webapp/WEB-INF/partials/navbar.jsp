@@ -1,3 +1,4 @@
+
 <html>
 <!DOCTYPE html>
 <nav class="navbar navbar-default">
@@ -7,13 +8,13 @@
             <a class="navbar-brand" href="/ads">Star Ship Ad lister</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-         <li id="register-link"  style="display: block"><a href="/register">Register</a></li>
-          <li id="login-link"  style="display: block"><a href="/login">Login</a></li>
-          <li  id="logout-link" style="display:block"><a href="/logout">Logout</a></li>
+            <li id="register-link"  style="display: block"><a href="/register">Register</a></li>
+            <li id="login-link"  style="display: block"><a href="/login">Login</a></li>
+            <li  id="logout-link" style="display:block"><a href="/logout">Logout</a></li>
         </ul>
 
     </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+
     <script>
         let isLoggedIn = true;
 
@@ -39,7 +40,9 @@
                 logoutLink.style.display = 'none';
             }
             console.log('updateNavbar called')
+            console.log(loginLink, logoutLink)
         }
+        window.addEventListener("load", updateNavbar);
     </script>
 </nav>
 </html>
