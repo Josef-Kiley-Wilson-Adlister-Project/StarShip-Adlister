@@ -4,6 +4,12 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Please Log In" />
     </jsp:include>
+    <style>
+        body {background-image: url("https://media.giphy.com/media/MaThe6p8WAKbf9NDDM/giphy.gif");
+            background-repeat: no-repeat; background-size: 100%;}
+        h1 {background-color: transparent; color: greenyellow}
+        form {color: greenyellow}
+    </style>
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
