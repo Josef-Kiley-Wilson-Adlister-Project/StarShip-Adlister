@@ -9,6 +9,7 @@
         <ul class="nav navbar-nav navbar-right d-flex flex-row" >
             <li><a class="text-warning m-1" href="/register">Register</a></li>
             <li><a class="text-warning m-1" href="/login">Login</a></li>
+            <li><a class="text-warning m-1" href="/profile">Profile</a></li>
             <li><a class="text-warning m-1" href="/logout">Logout</a></li>
             <li><a class="text-warning m-1" href="/ads/create">Create ad</a></li>
         </ul>
