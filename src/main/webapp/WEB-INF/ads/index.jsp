@@ -13,7 +13,7 @@
         }
     </style>
 </head>
-<body>
+<body>git checkou
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="container">
