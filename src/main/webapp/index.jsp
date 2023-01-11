@@ -3,20 +3,22 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Starship Adlister" />
+        <jsp:param name="title" value="Starship Adlister"/>
     </jsp:include>
     <style>
-        body{
+        body {
             background-color: #000000;
-            color: yellow;
-
+            color: #a18a03;
+            background-image: url("https://pbs.twimg.com/media/EEdsE45X4AE8S0C?format=jpg&name=medium");
+            background-repeat: no-repeat;
+            background-size: 100%;
         }
     </style>
 </head>
 <body>
-    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-    <div class="container">
-        <h1>Welcome to the StarShip Adlister!</h1>
-    </div>
+<jsp:include page="/WEB-INF/partials/navbar.jsp"/>
+<div class="container">
+    <h1>Welcome to the StarShip Adlister!</h1>
+</div>
 </body>
 </html>
