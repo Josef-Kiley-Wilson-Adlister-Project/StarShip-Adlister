@@ -9,6 +9,18 @@
         body{
             background-color: #000000;
             color: yellow;
+        }
+        .container{
+            border: 2px solid greenyellow;
+            margin: 50px;
+            text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
+        }
+        h1 {
+            /*background-image: url("https://media.giphy.com/media/VxbvpfaTTo3le/giphy.gif");*/
+            border: 2px solid powderblue;
+            margin: 50px;
+            background-size: cover;
+            text-align: center;
 
         }
     </style>
