@@ -8,7 +8,9 @@
         body{
             background-color: #000000;
             color: yellow;
-
+            background-image: url("https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/fdb2bc37-1936-4561-8c5b-5f630ac7b104/this-scientifically-accurate-demonstration-of-the-death-stars-laser-weapon-in-star-wars.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
         }
     </style>
 </head>
@@ -33,7 +35,7 @@
                 <label for="confirm_password">Confirm Password</label>
                 <input id="confirm_password" name="confirm_password" class="form-control" type="password">
             </div>
-            <input type="submit" class="btn btn-primary btn-block">
+            <input type="submit" class="btn btn-warning btn-block">
         </form>
     </div>
 </body>
