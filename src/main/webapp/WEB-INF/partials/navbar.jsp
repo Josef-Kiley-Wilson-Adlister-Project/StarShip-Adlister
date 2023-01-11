@@ -7,40 +7,40 @@
             <a class="navbar-brand text-warning" href="/ads">Star Ship Ad lister</a>
         </div>
         <ul class="nav navbar-nav navbar-right d-flex flex-row" >
-         <li><a class="text-warning m-1" href="/register">Register</a></li>
-          <li><a class="text-warning m-1" href="/login">Login</a></li>
-          <li><a class="text-warning m-1" href="/logout">Logout</a></li>
+            <li><a class="text-warning m-1" href="/register">Register</a></li>
+            <li><a class="text-warning m-1" href="/login">Login</a></li>
+            <li><a class="text-warning m-1" href="/logout">Logout</a></li>
             <li><a class="text-warning m-1" href="/ads/create">Create ad</a></li>
         </ul>
 
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
-<%--    <script>--%>
-<%--        let isLoggedIn = true;--%>
+    <%--    <script>--%>
+    <%--        let isLoggedIn = true;--%>
 
-<%--        function handleLogin() {--%>
-<%--            isLoggedIn = true;--%>
-<%--            updateNavbar();--%>
-<%--        }--%>
+    <%--        function handleLogin() {--%>
+    <%--            isLoggedIn = true;--%>
+    <%--            updateNavbar();--%>
+    <%--        }--%>
 
-<%--        function handleLogout() {--%>
-<%--            isLoggedIn = false;--%>
-<%--            updateNavbar();--%>
-<%--        }--%>
+    <%--        function handleLogout() {--%>
+    <%--            isLoggedIn = false;--%>
+    <%--            updateNavbar();--%>
+    <%--        }--%>
 
-<%--        function updateNavbar() {--%>
-<%--            let loginLink = document.getElementById('login-link');--%>
-<%--            let logoutLink = document.getElementById('logout-link');--%>
-<%--            console.log(isLoggedIn)--%>
-<%--            if (isLoggedIn) {--%>
-<%--                loginLink.style.display = 'none';--%>
-<%--                logoutLink.style.display = 'block';--%>
-<%--            } else {--%>
-<%--                loginLink.style.display = 'block';--%>
-<%--                logoutLink.style.display = 'none';--%>
-<%--            }--%>
-<%--            console.log('updateNavbar called')--%>
-<%--        }--%>
-<%--    </script>--%>
+    <%--        function updateNavbar() {--%>
+    <%--            let loginLink = document.getElementById('login-link');--%>
+    <%--            let logoutLink = document.getElementById('logout-link');--%>
+    <%--            console.log(isLoggedIn)--%>
+    <%--            if (isLoggedIn) {--%>
+    <%--                loginLink.style.display = 'none';--%>
+    <%--                logoutLink.style.display = 'block';--%>
+    <%--            } else {--%>
+    <%--                loginLink.style.display = 'block';--%>
+    <%--                logoutLink.style.display = 'none';--%>
+    <%--            }--%>
+    <%--            console.log('updateNavbar called')--%>
+    <%--        }--%>
+    <%--    </script>--%>
 </nav>
 </html>
