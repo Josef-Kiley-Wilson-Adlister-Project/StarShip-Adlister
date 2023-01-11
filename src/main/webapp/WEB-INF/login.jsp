@@ -7,7 +7,7 @@
     <style>
         body {background-image: url("https://media.giphy.com/media/MaThe6p8WAKbf9NDDM/giphy.gif");
             background-repeat: no-repeat; background-size: 100%;}
-        h1 {background-color: transparent; color: greenyellow}
+        h1 {background-color: transparent; color: yellow}
         form {color: greenyellow}
     </style>
 </head>
@@ -24,7 +24,7 @@
                 <label for="password">Password</label>
                 <input id="password" name="password" class="form-control" type="password">
             </div>
-            <input type="submit" class="btn btn-primary btn-block" value="Log In">
+            <input type="submit" class="btn btn-warning btn-block" value="Log In">
         </form>
     </div>
 </body>

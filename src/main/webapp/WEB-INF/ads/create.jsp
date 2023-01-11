@@ -30,7 +30,7 @@
             <label for="price">Price</label>
             <input id="price" name="price" class="form-control" type="text">
         </div>
-        <input type="submit" class="btn btn-block btn-primary">
+        <input type="submit" class="btn btn-block btn-warning">
     </form>
 </div>
 </body>
