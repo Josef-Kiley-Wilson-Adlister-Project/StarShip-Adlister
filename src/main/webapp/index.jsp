@@ -10,8 +10,11 @@
             background-color: #000000;
             color: #a18a03;
             background-image: url("https://pbs.twimg.com/media/EEdsE45X4AE8S0C?format=jpg&name=medium");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-attachment: fixed;
         }
     </style>
 </head>

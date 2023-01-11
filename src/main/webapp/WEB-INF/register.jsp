@@ -9,8 +9,11 @@
             background-color: #000000;
             color: yellow;
             background-image: url("https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/fdb2bc37-1936-4561-8c5b-5f630ac7b104/this-scientifically-accurate-demonstration-of-the-death-stars-laser-weapon-in-star-wars.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-attachment: fixed;
         }
     </style>
 </head>

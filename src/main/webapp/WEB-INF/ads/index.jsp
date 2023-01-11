@@ -9,6 +9,12 @@
         body{
             background-color: #000000;
             color: yellow;
+            background-image: url("https://lumiere-a.akamaihd.net/v1/images/databank_superstardestroyer_01_169_d5757b90.jpeg?region=0%2C49%2C1560%2C780");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         .container{
             border: 2px solid greenyellow;
