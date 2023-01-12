@@ -71,6 +71,7 @@ public class MySQLAdsDao implements Ads {
         }
         return ads;
     }
+
     @Override
     public List<Ad> byUser(long userId) {
         PreparedStatement stmt = null;
@@ -80,7 +81,20 @@ public class MySQLAdsDao implements Ads {
             ResultSet rs = stmt.executeQuery();
             return createAdsFromResults(rs);
         } catch (SQLException e) {
-            throw new RuntimeException("Error retrieving all ads.", e);
+            throw new RuntimeException("Error retrieving all ads by user.", e);
         }
-}
+    }
+
+    @Override
+    public List<Ad> adSearch(String search) {
+        PreparedStatement stmt = null;
+        try {
+            stmt = connection.prepareStatement("SELECT * FROM ads WHERE title = ?");
+            stmt.setString(1, "%" +search+ "%");
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error retrieving all ads by search.", e);
+        }
+    }
 }

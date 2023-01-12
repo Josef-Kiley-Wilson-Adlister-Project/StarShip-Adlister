@@ -6,7 +6,8 @@
     </jsp:include>
     <style>
         body {background-image: url("https://media.giphy.com/media/MaThe6p8WAKbf9NDDM/giphy.gif");
-            background-repeat: no-repeat; background-size: 100%;}
+            background-repeat: no-repeat; background-size: 100%;
+            text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;}
         h1 {background-color: transparent; color: yellow}
         form {color: greenyellow}
     </style>
@@ -18,11 +19,11 @@
         <form action="/login" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input id="username" name="username" class="form-control" type="text">
+                <input id="username" name="username" class="form-control bg-transparent text-white" type="text">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input id="password" name="password" class="form-control" type="password">
+                <input id="password" name="password" class="form-control bg-transparent text-white" type="password">
             </div>
             <input type="submit" class="btn btn-warning btn-block" value="Log In">
         </form>

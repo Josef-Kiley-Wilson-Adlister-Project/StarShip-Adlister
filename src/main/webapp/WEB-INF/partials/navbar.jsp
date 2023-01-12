@@ -5,7 +5,7 @@
     <div class="container-fluid ">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand text-warning" href="/ads">Star Ship Ad lister</a>
+            <a class="navbar-brand text-warning" href="/ads">Starships For Sale</a>
         </div>
         <ul class="nav navbar-nav navbar-right d-flex flex-row" >
             <c:choose>
