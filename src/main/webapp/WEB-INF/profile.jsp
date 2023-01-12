@@ -11,17 +11,39 @@
             color: yellow;
             background-image: url("https://www.denofgeek.com/wp-content/uploads/2020/05/Star-Destroyer.jpg?w=1024");
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            background-attachment: fixed;
+            text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
         }
+        .containerOne{
+            border: 2px solid greenyellow;
+            mso-border-shadow: yes;
+            text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
+            padding: 20px 30px;
+        }
+     
     </style>
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-    <div class="container">
-        <h1>Welcome Home, ${sessionScope.user.username}!</h1>
+    <div class="container text-center">
+        <h1>Welcome Customer, ${sessionScope.user.username}! How can we be of assistance?</h1>
     </div>
-    <div class="container">
+    <br>
+        <div>
+            <h2 class="userName">${sessionScope.user.username}</h2>
+            <br>
+            <h3 class="email">Email:  ${sessionScope.user.email}</h3>
+        </div>
+    <form action="profile" method="post">
+
+    </form>
+    <br>
+
+    <div class="containerOne">
         <h1 class="d-flex justify-content-center">Your Starships for sale</h1>
 
         <c:forEach var="ad" items="${ads}">
