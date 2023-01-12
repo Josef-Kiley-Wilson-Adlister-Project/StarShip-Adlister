@@ -36,7 +36,14 @@
 
 <div class="container">
     <h1>Starships for sale</h1>
-
+    <div>
+        <form method="POST" action="/search">
+            <div class="form-group d-flex">
+                <input id="title" name="query" class="form-control mr-1 bg-transparent text-white" type="text">
+                <input type="submit" class="btn btn-warning" value="Search">
+            </div>
+        </form>
+    </div>
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>${ad.title}</h2>
