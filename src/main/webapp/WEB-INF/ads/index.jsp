@@ -40,18 +40,12 @@
     <div>
         <form method="POST" action="/search">
             <div class="form-group d-flex">
-                <input id="title" name="query" class="form-control mr-1 bg-transparent text-white" type="text">
+                <input id="title" name="searchbox" class="form-control mr-1 bg-transparent text-white" type="text">
                 <input type="submit" class="btn btn-warning" value="Search">
             </div>
         </form>
     </div>
-    <c:forEach var="search" items="${searched}">
-        <div class="col-md-6">
-            <h2>${ad.title}</h2>
-            <p>${ad.description}</p>
-            <p>${ad.price}</p>
-        </div>
-    </c:forEach>
+
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>${ad.title}</h2>
