@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @WebServlet(name = "SearchServlet", urlPatterns = "/search")
 public class SearchServlet extends HttpServlet {
-
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("ads", req.getSession().getAttribute("ads"));
         req.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(req, resp);
@@ -22,12 +22,7 @@ public class SearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String searchItem = null;
         searchItem = req.getParameter("query");
-        try {
-            req.getSession().setAttribute("searched", DaoFactory.getAdsDao().adSearch(searchItem));
-
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        req.getRequestDispatcher("WEB-INF/ads/index.jsp").forward(req, resp);
+        req.getSession().setAttribute("ads", DaoFactory.getAdsDao().adSearch(searchItem));
+        resp.sendRedirect("/search");
     }
 }
