@@ -41,7 +41,7 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
-<div class="container">
+<div class="container-fluid">
     <h1>Starships for sale</h1>
     <div>
         <form method="POST" action="/search">
