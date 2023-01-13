@@ -34,7 +34,7 @@
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-    <div class="container text-center">
+    <div class="container-fluid text-center">
         <h1>Welcome Customer, ${sessionScope.user.username}! How can we be of assistance?</h1>
     </div>
     <br>
