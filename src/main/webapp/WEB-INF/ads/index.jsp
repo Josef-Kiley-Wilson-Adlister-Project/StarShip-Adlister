@@ -3,10 +3,10 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Viewing All The Ads" />
+        <jsp:param name="title" value="Viewing All The Ads"/>
     </jsp:include>
     <style>
-        body{
+        body {
             background-color: #000000;
             color: yellow;
             background-image: url("https://lumiere-a.akamaihd.net/v1/images/databank_superstardestroyer_01_169_d5757b90.jpeg?region=0%2C49%2C1560%2C780");
@@ -17,13 +17,15 @@
             background-attachment: fixed;
             text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
         }
-        .container{
+
+        .container {
             border: 2px solid greenyellow;
             margin: 50px;
 
         }
+
         h1 {
-            /*background-image: url("https://media.giphy.com/media/VxbvpfaTTo3le/giphy.gif");*/
+
             border: 2px solid powderblue;
             margin: 50px;
             background-size: cover;
@@ -33,7 +35,7 @@
     </style>
 </head>
 <body>
-<jsp:include page="/WEB-INF/partials/navbar.jsp" />
+<jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
 <div class="container">
     <h1>Starships for sale</h1>
@@ -46,13 +48,32 @@
         </form>
     </div>
 
-    <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
-            <h2>${ad.title}</h2>
-            <p>${ad.description}</p>
-            <p>${ad.price}</p>
-        </div>
-    </c:forEach>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach items="${ads}" var="ad">
+            <tr>
+                <td>${ad.title}</td>
+                <td>${ad.description}</td>
+                <td>${ad.price}</td>
+
+                <td>
+                    <form action="/delete" method="post">
+                        <input type="hidden" name="id" value="${ad.id}">
+                        <input class="btn btn-danger btn-sm" type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 </div>
 
 </body>
