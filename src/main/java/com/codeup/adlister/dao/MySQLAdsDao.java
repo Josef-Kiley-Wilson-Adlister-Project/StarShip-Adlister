@@ -100,4 +100,14 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error retrieving all ads by search.", e);
         }
     }
+    public void delete(Long id) {
+        try {
+            String insertQuery = "DELETE FROM ads WHERE id = ?";
+            PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
+            stmt.setLong(1, id);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error deleting product #" + id, e);
+        }
+    }
 }

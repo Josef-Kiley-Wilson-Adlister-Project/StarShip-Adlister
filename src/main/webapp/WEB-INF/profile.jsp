@@ -46,14 +46,32 @@
 
     <div class="containerOne">
         <h1 class="d-flex justify-content-center">Your Starships for sale</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach items="${ads}" var="ad">
+                <tr>
+                    <td>${ad.title}</td>
+                    <td>${ad.description}</td>
+                    <td>${ad.price}</td>
 
-        <c:forEach var="ad" items="${ads}">
-            <div class="col-md-6">
-                <h2>${ad.title}</h2>
-                <p>${ad.description}</p>
-                <p>${ad.price}</p>
-            </div>
-        </c:forEach>
+                    <td>
+                        <form action="/delete" method="post">
+                            <input type="hidden" name="id" value="${ad.id}">
+                            <input class="btn btn-danger btn-sm" type="submit" value="Delete">
+                        </form>
+                    </td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
