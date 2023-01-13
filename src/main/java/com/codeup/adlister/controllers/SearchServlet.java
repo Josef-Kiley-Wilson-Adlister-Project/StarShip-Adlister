@@ -21,6 +21,7 @@ public class SearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String searchItem = req.getParameter("searchbox");
         req.getSession().setAttribute("ads", DaoFactory.getAdsDao().adSearch(searchItem));
+        System.out.println(" =====doPost=====");
         System.out.println(searchItem);
         resp.sendRedirect("/search");
     }
