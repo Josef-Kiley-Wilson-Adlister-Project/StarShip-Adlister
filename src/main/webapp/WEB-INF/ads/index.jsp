@@ -15,11 +15,12 @@
             height: 100%;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
         }
         .container{
             border: 2px solid greenyellow;
             margin: 50px;
-            text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
+
         }
         h1 {
             /*background-image: url("https://media.giphy.com/media/VxbvpfaTTo3le/giphy.gif");*/
@@ -39,11 +40,12 @@
     <div>
         <form method="POST" action="/search">
             <div class="form-group d-flex">
-                <input id="title" name="query" class="form-control mr-1 bg-transparent text-white" type="text">
+                <input id="title" name="searchbox" class="form-control mr-1 bg-transparent text-white" type="text">
                 <input type="submit" class="btn btn-warning" value="Search">
             </div>
         </form>
     </div>
+
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6">
             <h2>${ad.title}</h2>
