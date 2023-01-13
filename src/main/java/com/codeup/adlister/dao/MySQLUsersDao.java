@@ -63,5 +63,18 @@ public class MySQLUsersDao implements Users {
             rs.getString("password")
         );
     }
+    @Override
+    public void updateByUsername(String updateUsername, String updateEmail, String userName) {
+        String query = "update users set username = ?, email = ? where username = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setString(1, updateUsername);
+            stmt.setString(2, updateEmail);
+            stmt.setString(3, userName);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error finding a user by username", e);
+        }
+    }
 
 }

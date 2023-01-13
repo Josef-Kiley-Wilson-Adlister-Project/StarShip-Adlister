@@ -34,10 +34,11 @@
     </div>
     <br>
         <div>
-            <h2 class="userName">${sessionScope.user.username}</h2>
+            <h3 class="userName">User Name:&nbsp; ${sessionScope.user.username}</h3>
             <br>
-            <h3 class="email">Email:  ${sessionScope.user.email}</h3>
+            <h3 class="email">Email:&nbsp; ${sessionScope.user.email}</h3>
         </div>
+<%--    Just trying to get an update form done --%>
     <form action="profile" method="post">
 
     </form>
