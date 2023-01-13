@@ -19,9 +19,14 @@
         }
         .containerOne{
             border: 2px solid greenyellow;
-            mso-border-shadow: yes;
+            box-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
             text-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
             padding: 20px 30px;
+        }
+        .table {
+            color: yellow;
+            border: 2px solid greenyellow;
+            box-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
         }
      
     </style>
@@ -34,9 +39,9 @@
     </div>
     <br>
         <div>
-            <h3 class="userName">User Name:&nbsp; ${sessionScope.user.username}</h3>
+            <h3 class="userName">&nbsp; User Name: &nbsp; ${sessionScope.user.username}</h3>
             <br>
-            <h3 class="email">Email:&nbsp; ${sessionScope.user.email}</h3>
+            <h3 class="email"> &nbsp; Email: &nbsp; ${sessionScope.user.email}</h3>
         </div>
 <%--    Just trying to get an update form done --%>
     <form action="profile" method="post">
