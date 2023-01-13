@@ -20,18 +20,22 @@
 
         .container {
             border: 2px solid greenyellow;
+            box-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
             margin: 50px;
 
         }
 
         h1 {
-
-            border: 2px solid powderblue;
             margin: 50px;
             background-size: cover;
             text-align: center;
-
         }
+        .table {
+            color: yellow;
+            border: 2px solid greenyellow;
+            box-shadow: 1px 1px 2px cornflowerblue, 0 0 25px cornflowerblue, 0 0 5px yellowgreen;
+        }
+
     </style>
 </head>
 <body>
